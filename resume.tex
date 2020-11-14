@@ -1,60 +1,89 @@
-\documentclass{resume}
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\documentclass[options]{resume}
 
-\name{John Q. Public}
-\address{ 4489 Oxford Lane \\ San Antonio, PA 90024  }
-\address{ 555~$\cdot$~356~$\cdot$~7936 \\ jpublic@example.edu }
 
-\def\nameskip{\bigskip}
-\def\sectionskip{\medskip}
+\lastname{Public}
+\otherNames{John Q.}
+
+\address{07465534231 \\ 
+        \href{mailto:someone@somewhere.com}{someone@somewhere.com} \\ \href{https://github.com/sumaiyah}{github.com/random}}
+\address{4489 Oxford Lane \\ San Antonio \\ PA 90210}
+
+\usepackage[left=0.4in,top=0.3in,right=0.4in,bottom=0.3in]{geometry} % Document margins
+
+\usepackage{changepage}
+\usepackage{multicol}
+\usepackage{enumitem} % dense list
+\usepackage[super]{nth}
+\usepackage{hyperref} % hyperlink to github
+
 
 \begin{document}
+	
+	\begin{rSection}{Education}
+		{\bf University of London, London} \hfill {\em October 2020 – [June 2021]} 
+		\\ \textit{MEng (Hons), Advanced Engineering}
+		\\ Modules include Spelling, Grammar, Cheesemaking
+		
+		{\bf University of California, Berkley} \hfill {\em October 2017 – 2020} 
+		\\ \textit{BA (Hons), Computer Science}
+		\\ Achieved a semi-adequete grade. Minoring in linguistics
 
-  \begin{rSection}{Education}
-    {\bf University of California, Berkeley} \hfill {\em June 2004} \\ 
-    { B.S. in Computer Science \& Engineering } \\
-    { Minor in Linguistics } \smallskip \\
-    { Member of Eta Kappa Nu } \\
-    { Member of Upsilon Pi Epsilon } \\
-    Overall GPA: 5.678
-  \end{rSection}
-  
-  \begin{rSection}{Experience}
-  
-    \begin{rSubsection}{ACME, Inc}{October 2010 - Present}{Web Developer}{Palo Alto, CA}
-    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.
-    \item Donec et mollis dolor. Praesent et diam eget libero Adobe Coldfusion egestas mattis sit amet vitae augue.
-    \item Nam tincidunt congue enim, ut porta lorem Microsoft SQL lacinia consectetur.
-    \item Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    \item Pellentesque auctor nisi id magna consequat JavaScript sagittis.
-    \item Aliquam at massa ipsum. Quisque bash bibendum purus convallis nulla ultrices ultricies.
-    \end{rSubsection}
-  
-    \begin{rSubsection}{AJAX Hosting}{December 2009 - October 2010}{Lead Developer}{Austin, TX}
-    \item Aenean ut gravida lorem. Ut turpis felis, Perl pulvinar a semper sed, adipiscing id dolor.
-    \item Curabitur dapibus enim sit amet elit pharetra tincidunt website feugiat nisl imperdiet. Ut convallis AJAX libero in urna ultrices accumsan.
-    \item Cum sociis natoque penatibus et magnis dis MySQL parturient montes, nascetur ridiculus mus.
-    \item In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
-    \item Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper.
-    \end{rSubsection}
+		{\bf Greenvalley High, Russia} \hfill {\em September 2015 - 2017} 
+		\\ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco iste natus error sit voluptatem accusantium
+		
+		{\bf Stanford Grammar, France} \hfill {\em September 2010 - 2015} 
+		\\ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+	\end{rSection}
+	
+    \begin{rSection}{Publications}
+    \textbf{J. Q. Public}, Z. Steele, M. Foster. A super duper fancy schmancy title with every buzzword
+    \end{rSection}
 
-    \begin{rSubsection}{TinySoft}{January 2008 - April 2010}{Web Designer \& Developer}{Gainesville, GA}
-    \item Vivamus PostgreSQL fermentum semper porta. Nunc diam velit PHP, adipiscing ut tristique vitae
-    \item Maecenas convallis ullamcorper ultricies stylesheets.
-    \item Quisque mi metus, unit tests CSS ornare sit amet fermentum et, tincidunt et orci.
-    \item Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id
-    \end{rSubsection}
-  
-  \end{rSection}
-  
-  \begin{rSection}{Technical Strengths}
-    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-      Computer Languages & Prolog, Haskell, AWK, Erlang, Scheme, ML \\
-      Protocols \& APIs & XML, JSON, SOAP, REST \\
-      Databases & MySQL, PostgreSQL, Microsoft SQL \\
-      Tools & SVN, Vim, Emacs
-    \end{tabular}
-  \end{rSection}
+	\begin{rSection}{Technical Skills}
+		\textbf{{Programming Languages:}} (Proficient) Python; (Familiar) Java, SQL, C/C++, \LaTeX 
+	\end{rSection}
 
+	\begin{rSection}{Projects}
+	    \textbf{Cool Project Title}
+		\addressSep
+		\emph{ Python, Tensorflow}
+		\\ magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur ullam corporis suscipit laboriosam, nisi ut aliquid 
+		
+		\textbf{Fancy Data}
+		\addressSep
+		\emph{ Python, NumPy, pandas, Matplotlib}
+		\\ error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae et quasi architecto beataeet quasi architecto beatae 
+		
+	\end{rSection}
+
+	\begin{rSection}{Experience}
+		{\bf Google, London (Remote)}
+		 \textit{Machine Learning Research - Intern}
+		 \hfill {\em July 2020 - August 2020} 
+		 \\ et quasi architecto beataeo inventore veritatis et quasi architecto beatae et quasi architecto beataeet quasi architecto beatae quasi architecto beataeet quasi architecto beatae 
+		
+		{\bf Plain Street, London} 
+		 \textit{Trading Intern} 
+		 \hfill {\em September 2019}
+		\\ quasi architecto beataeet quasi architecto bubbles quasi architecto beataeet quasi architecto beatae inventore veritatis et quasi architecto beatae et quasi architecto beataeet quasi architecto beatae 
+		
+		{\bf Kneebook} 
+		\textit{Software Engineer - Intern}
+		\hfill {\em June 2019 - August 2019} 
+		\\ inventore veritatis et quasi architecto beatae et quasi architecto beataeet quasi architecto beatae did not sell my soul inventore veritatis et quasi architecto beatae et quasi architecto beataeet quasi architecto beatae 
+	\end{rSection}
+
+	\begin{rSection}{Achievements, Hobbies and Interests}
+		\begin{itemize}[noitemsep]
+			\item \textbf{Inventore} veritatis et quasi architecto \textbf{beatae} et quasi architecto beataeet quasi architecto beatae 
+			\item Veritatis et quasi \textbf{quasi} architecto beatae et quasi architecto beataeet quasi architecto beatae 
+			\item \textbf{Veritatis} et quasi cheese beatae is quasi great beataeet quasi architecto beatae 
+			\item Beataeet quasi \textbf{architecto} beatae quasi architecto beataeet quasi architecto beatae 
+			\item Inventore veritatis et quasi architecto beatae et quasi architecto beataeet quasi architecto beatae 
+			\item Beataeet quasi architecto beatae quasi \textbf{architecto} beataeet quasi \textbf{architecto} beatae 
+
+		\end{itemize}
+	\end{rSection}
+{\textbf{References available on request} \hfill Last updated: \today}
 \end{document}
