@@ -1,5 +1,7 @@
 # A LaTeX resume template
 
+I have adapted the original class files and design to something that i quite like now :)
+
 `resume.cls` is a document class that adds name and address information to the
 head of the document and provides resume section and subsection environments
 (`rSection` and `rSubsection`).  The address separator format, the
